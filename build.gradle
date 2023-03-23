@@ -10,9 +10,21 @@ repositories {
 }
 
 dependencies {
+    // HTTP Servlet Dependency
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+
+    // Reflection Dependency
+    implementation 'org.reflections:reflections:0.10.2'
+
+    // Logger Dependency
+    testImplementation 'ch.qos.logback:logback-classic:1.2.3'
+
     // JUnit 5 Dependency
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // AssertJ Dependency
+    testImplementation 'org.assertj:assertj-core:3.24.2'
 }
 
 test {
